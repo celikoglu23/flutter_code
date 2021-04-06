@@ -1,19 +1,25 @@
-main(List<String> args) {
-  int sayi =5;
+void main(List<String> args) {
   Ogrenci menderes=Ogrenci();
-  var hasan =Ogrenci();
+  Ogrenci hasan= Ogrenci();
+
 
   menderes.ogrNo=10;
   menderes.adi="menderesss";
   menderes.erkekMi=true;
   menderes.bilgileriYazdir();
+  hasan.adi="hasan";
+  hasan.erkekMi=false;
+  hasan.ogrNo=123;
+  hasan.bilgileriYazdir();
+  
+ 
 
 }
 class Ogrenci{
 
-  int ogrNo;
-  String adi;
-bool erkekMi;
+  int ogrNo=1;
+  String adi="";
+bool erkekMi=true;
 
 void dersCalis(){
 
@@ -29,6 +35,9 @@ void bilgileriYazdir(){
 }
 
 }
+
+
+
 
 
 
